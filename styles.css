@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Orbitron', sans-serif;
     background-color: #0D0D0D;
@@ -66,4 +65,171 @@ button {
 
 button:hover {
     background-color: #00FF7F;
+}
+
+/* Tournament Section Styles */
+.tournament-section {
+    background-color: #1E1E1E;
+    padding: 60px 20px;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.tournament-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #FF4500;
+}
+
+.tournament-bracket {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.bracket-round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    width: 200px;
+}
+
+.player-card {
+    background-color: #2C2C2C;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.player-card img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.player-info {
+    text-align: left;
+}
+
+.player-name {
+    font-size: 1.2em;
+    margin: 0;
+    color: #FFDD00;
+}
+
+.player-stats {
+    font-size: 0.9em;
+    margin-top: 5px;
+    color: #A9A9A9;
+}
+
+.player-card:hover {
+    transform: scale(1.05);
+}
+
+.vs {
+    margin: 20px 0;
+    font-size: 1.8em;
+    color: #FF007F;
+}
+
+/* Matchmaking Section Styles */
+.matchmaking-section {
+    background-color: #2C2C2C;
+    padding: 60px 20px;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.matchmaking-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #FF4500;
+}
+
+.queue-display {
+    margin-bottom: 40px;
+}
+
+.queue-display p {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.queue-display span {
+    color: #00FF7F;
+    font-weight: bold;
+}
+
+.join-queue {
+    background-color: #FF4500;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.join-queue:hover {
+    background-color: #FFD700;
+}
+
+.match-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.match-player {
+    background-color: #3C3C3C;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.match-player img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.match-player p {
+    margin: 5px 0;
+}
+
+.player-rank {
+    color: #FFD700;
+}
+
+.vs {
+    font-size: 2em;
+    color: #FF007F;
+    margin: 0 20px;
+}
+
+.match-player:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tournament-bracket, .match-display {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vs {
+        margin: 15px 0;
+    }
 }
