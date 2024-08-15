@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: 'Orbitron', sans-serif;
     background-color: #0D0D0D;
@@ -6,15 +7,16 @@ body {
     padding: 0;
 }
 
-.hero {
-    background: linear-gradient(45deg, #FF0000, #FFDD00);
+header {
+    background-color: #1E1E1E;
+    padding: 10px 20px;
     text-align: center;
-    padding: 50px 20px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -34,202 +36,52 @@ nav ul li a:hover {
 }
 
 h1 {
-    font-size: 3em;
-    margin-top: 20px;
-}
-
-.showcase {
-    background-color: #1A1AFF;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.showcase h2 {
     font-size: 2.5em;
-}
-
-.showcase p {
-    font-size: 1.2em;
-    margin: 20px 0;
-}
-
-button {
-    background-color: #FF007F;
-    color: #FFFFFF;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #00FF7F;
-}
-
-/* Tournament Section Styles */
-.tournament-section {
-    background-color: #1E1E1E;
-    padding: 60px 20px;
-    color: #F5F5F5;
-    text-align: center;
-}
-
-.tournament-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
     color: #FF4500;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.tournament-bracket {
+.content-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Additional Styles for Streamers Section */
+.streamer-grid {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    gap: 20px;
 }
 
-.bracket-round {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 20px;
-    width: 200px;
-}
-
-.player-card {
+.streamer {
     background-color: #2C2C2C;
     padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.player-card img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
+.streamer img {
+    width: 150px;
+    border-radius: 10px;
 }
 
-.player-info {
-    text-align: left;
-}
-
-.player-name {
-    font-size: 1.2em;
-    margin: 0;
-    color: #FFDD00;
-}
-
-.player-stats {
-    font-size: 0.9em;
-    margin-top: 5px;
-    color: #A9A9A9;
-}
-
-.player-card:hover {
-    transform: scale(1.05);
-}
-
-.vs {
-    margin: 20px 0;
-    font-size: 1.8em;
+.streamer h3 {
+    margin: 10px 0;
     color: #FF007F;
 }
 
-/* Matchmaking Section Styles */
-.matchmaking-section {
-    background-color: #2C2C2C;
-    padding: 60px 20px;
-    color: #F5F5F5;
-    text-align: center;
-}
-
-.matchmaking-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #FF4500;
-}
-
-.queue-display {
-    margin-bottom: 40px;
-}
-
-.queue-display p {
-    font-size: 1.3em;
-    margin-bottom: 10px;
-}
-
-.queue-display span {
-    color: #00FF7F;
-    font-weight: bold;
-}
-
-.join-queue {
+.streamer button {
     background-color: #FF4500;
     color: #FFFFFF;
     border: none;
-    padding: 15px 40px;
-    font-size: 1.2em;
+    padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
     border-radius: 5px;
 }
 
-.join-queue:hover {
+.streamer button:hover {
     background-color: #FFD700;
-}
-
-.match-display {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.match-player {
-    background-color: #3C3C3C;
-    padding: 20px;
-    border-radius: 10px;
-    width: 200px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.match-player img {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-}
-
-.match-player p {
-    margin: 5px 0;
-}
-
-.player-rank {
-    color: #FFD700;
-}
-
-.vs {
-    font-size: 2em;
-    color: #FF007F;
-    margin: 0 20px;
-}
-
-.match-player:hover {
-    transform: scale(1.05);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .tournament-bracket, .match-display {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .vs {
-        margin: 15px 0;
-    }
 }
