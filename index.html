@@ -97,6 +97,11 @@
             });
             document.getElementById(sectionId).style.display = 'block';
         }
+
+        // Add visible class on page load to animate the first section
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('home').classList.add('visible');
+        });
     </script>
 </body>
 </html>
