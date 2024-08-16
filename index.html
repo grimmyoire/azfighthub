@@ -10,12 +10,12 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#tournaments">Tournaments</a></li>
-            <li><a href="#streamers">Streamers</a></li>
-            <li><a href="#forums">Forums</a></li>
-            <li><a href="#shop">Shop</a></li>
+            <li><a href="#home" onclick="showSection('home')">Home</a></li>
+            <li><a href="#events" onclick="showSection('events')">Events</a></li>
+            <li><a href="#tournaments" onclick="showSection('tournaments')">Tournaments</a></li>
+            <li><a href="#streamers" onclick="showSection('streamers')">Streamers</a></li>
+            <li><a href="#forums" onclick="showSection('forums')">Forums</a></li>
+            <li><a href="#shop" onclick="showSection('shop')">Shop</a></li>
         </ul>
     </nav>
 
@@ -26,7 +26,6 @@
         <div class="content-container">
             <h1>Player Select</h1>
             <p>Choose your fighter and enter the arena!</p>
-            <!-- Arcade Menu Buttons -->
             <div class="game-menu">
                 <button class="arcade-button" onclick="showSection('tekken8')">Tekken 8</button>
                 <button class="arcade-button" onclick="showSection('streetfighter6')">Street Fighter 6</button>
