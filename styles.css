@@ -1,22 +1,14 @@
 /* Global Styles */
 body {
     font-family: 'Press Start 2P', sans-serif;
-    background-color: #0d0221;
+    background-color: #1b1b2f;
     color: #FFFFFF;
     margin: 0;
     padding: 0;
-    background-image: url('pixelart.png'); /* New background image */
+    background-image: url('pixellove.png'); /* Background image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
-
-header {
-    background: linear-gradient(90deg, #ffcc00, #ff8800); /* Arcade yellow and orange gradient */
-    padding: 20px;
-    text-align: center;
-    border-bottom: 3px solid #ffcc00; /* Darker yellow for contrast */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
@@ -24,6 +16,7 @@ nav ul {
     padding: 0;
     margin: 0;
     text-align: center;
+    margin-top: 20px;
 }
 
 nav ul li {
@@ -32,7 +25,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffcc00; /* Arcade yellow for text */
+    color: #FFD700; /* True arcade yellow */
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
@@ -41,14 +34,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #ffcc00;
+    background-color: #FFD700;
     color: #000000;
 }
 
 h1 {
     font-size: 2.5em;
-    color: #ffcc00; /* Arcade yellow for main headers */
-    text-shadow: 3px 3px #ff8800, 0 0 10px #ff8800, 0 0 20px #ff8800; /* Orange shadow for arcade effect */
+    color: #FFD700; /* True arcade yellow */
+    text-shadow: 3px 3px #FFB800, 0 0 10px #FFD700, 0 0 20px #FFD700; /* Bright yellow shadow */
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -63,7 +56,6 @@ h1 {
     text-align: center;
     min-height: 100vh;
     padding: 20px;
-    margin-top: -20px; /* Adjust this value to move it up */
 }
 
 /* Arcade Buttons */
@@ -75,7 +67,7 @@ h1 {
 }
 
 .arcade-button {
-    background-color: #ffcc00; /* Arcade yellow */
+    background-color: #FFD700; /* True arcade yellow */
     color: #000000;
     font-family: 'Press Start 2P', sans-serif;
     padding: 15px 30px;
@@ -83,25 +75,29 @@ h1 {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc00, 0 0 45px #ffcc00;
+    box-shadow: 0 0 15px #FFD700, 0 0 30px #FFD700, 0 0 45px #FFD700;
     transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
     animation: pulse 2s infinite;
 }
 
 .arcade-button:hover {
-    background-color: #ff8800; /* Bright orange on hover */
+    background-color: #FFA500; /* Darker yellow for hover */
     color: #FFFFFF;
     transform: scale(1.1);
-    box-shadow: 0 0 20px #ff8800, 0 0 40px #ff8800, 0 0 60px #ff8800;
+    box-shadow: 0 0 20px #FFA500, 0 0 40px #FFA500, 0 0 60px #FFA500;
 }
 
 @keyframes pulse {
-    0% { box-shadow: 0 0 15px #ffcc00; }
-    50% { box-shadow: 0 0 30px #ffcc00; }
-    100% { box-shadow: 0 0 15px #ffcc00; }
+    0% { box-shadow: 0 0 15px #FFD700; }
+    50% { box-shadow: 0 0 30px #FFD700; }
+    100% { box-shadow: 0 0 15px #FFD700; }
 }
 
 /* Streamer Showcase */
+.streamer-showcase {
+    margin-top: 50px;
+}
+
 .streamer-grid {
     display: flex;
     justify-content: center;
@@ -116,7 +112,7 @@ h1 {
     padding: 20px;
     margin: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 15px #ffcc00; /* Yellow glow */
+    box-shadow: 0 0 15px #FFD700; /* Yellow glow */
     width: 250px;
     transition: transform 0.2s, box-shadow 0.3s;
 }
@@ -128,24 +124,24 @@ h1 {
 }
 
 .streamer h3 {
-    color: #ffcc00;
+    color: #FFD700;
     margin-bottom: 10px;
-    text-shadow: 0 0 5px #ffcc00;
+    text-shadow: 0 0 5px #FFD700;
 }
 
 .streamer p {
-    color: #ffcc00;
+    color: #FFD700;
     font-size: 1.1em;
     margin-bottom: 15px;
 }
 
 .streamer:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 30px #ffcc00;
+    box-shadow: 0 0 30px #FFD700;
 }
 
 .neon-button {
-    background-color: #ffcc00;
+    background-color: #FFD700;
     color: #000000;
     border: none;
     padding: 10px 20px;
@@ -154,13 +150,13 @@ h1 {
     margin-top: 10px;
     border-radius: 5px;
     font-weight: bold;
-    box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00, 0 0 60px #ffcc00;
+    box-shadow: 0 0 20px #FFD700, 0 0 40px #FFD700, 0 0 60px #FFD700;
 }
 
 .neon-button:hover {
-    background-color: #ff8800;
+    background-color: #FFA500;
     transform: scale(1.1);
-    box-shadow: 0 0 20px #ff8800, 0 0 40px #ff8800, 0 0 60px #ff8800;
+    box-shadow: 0 0 20px #FFA500, 0 0 40px #FFA500, 0 0 60px #FFA500;
 }
 
 /* Event and Tournament Items */
@@ -169,14 +165,14 @@ h1 {
     padding: 20px;
     margin: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 15px #ffcc00;
+    box-shadow: 0 0 15px #FFD700;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.3s;
 }
 
 .event-item:hover, .tournament-item:hover, .forum-item:hover, .shop-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 30px #ffcc00;
+    box-shadow: 0 0 30px #FFD700;
 }
 
 /* Event and Tournament Grids */
