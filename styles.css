@@ -1,203 +1,166 @@
-/* Global Styles */
+/* General Body Styling */
 body {
-    font-family: 'Press Start 2P', sans-serif;
-    background-color: #000000;
-    color: #FFFFFF;
     margin: 0;
     padding: 0;
-    background-image: url('pixellove.png'); /* Background image */
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    background-image: url('pixellove.png');
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
+    color: yellow;
 }
 
+/* Navigation Bar */
 nav ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 10px;
     text-align: center;
-    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #FFFF00; /* Soft yellow for better visibility */
     text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: yellow;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #FFFF00;
-    color: #000000;
+    color: red;
 }
 
+/* Header Styling */
 h1 {
-    font-size: 2.5em;
-    color: #FFFF00; /* Soft yellow */
-    text-shadow: 2px 2px #333333; /* Darker shadow for better readability */
+    text-align: center;
+    font-size: 48px;
+    color: yellow;
     margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+    text-shadow: 2px 2px red;
 }
 
-/* Centering Container */
-.content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    min-height: 100vh;
+/* Content Section Styling */
+.content-section {
+    display: none;
     padding: 20px;
+    text-align: center;
 }
 
-/* Arcade Buttons */
+.visible {
+    display: block;
+}
+
+.content-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 3px solid yellow;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 0px 20px yellow;
+}
+
+/* Game Menu */
 .game-menu {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 20px;
 }
 
 .arcade-button {
-    background-color: #FFFF00; /* Soft yellow */
-    color: #000000;
-    font-family: 'Press Start 2P', sans-serif;
+    background-color: yellow;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
     padding: 15px 30px;
     margin: 10px;
-    border: none;
-    border-radius: 10px;
     cursor: pointer;
-    box-shadow: 0 0 10px #FFFF00;
-    transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
-    animation: pulse 2s infinite;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .arcade-button:hover {
-    background-color: #FFD700; /* Darker yellow for hover */
-    color: #FFFFFF;
+    background-color: red;
+    color: yellow;
     transform: scale(1.1);
-    box-shadow: 0 0 15px #FFD700;
 }
 
-@keyframes pulse {
-    0% { box-shadow: 0 0 10px #FFFF00; }
-    50% { box-shadow: 0 0 20px #FFFF00; }
-    100% { box-shadow: 0 0 10px #FFFF00; }
-}
-
-/* Streamer Showcase */
+/* Streamer Showcasing */
 .streamer-showcase {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .streamer-grid {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .streamer {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    margin: 15px;
+    background-color: rgba(255, 255, 0, 0.2);
+    padding: 10px;
+    border: 2px solid yellow;
     border-radius: 10px;
-    box-shadow: 0 0 10px #FFFF00; /* Yellow glow */
-    width: 250px;
-    transition: transform 0.2s, box-shadow 0.3s;
+    text-align: center;
+    width: 200px;
 }
 
 .streamer img {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.streamer h3 {
-    color: #FFFF00;
-    margin-bottom: 10px;
-    text-shadow: 0 0 5px #FFFF00;
-}
-
-.streamer p {
-    color: #FFFF00;
-    font-size: 1.1em;
-    margin-bottom: 15px;
-}
-
-.streamer:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #FFFF00;
 }
 
 .neon-button {
-    background-color: #FFFF00;
-    color: #000000;
-    border: none;
+    background-color: yellow;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: black;
+    font-size: 14px;
     padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     margin-top: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    box-shadow: 0 0 15px #FFFF00;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .neon-button:hover {
-    background-color: #FFD700;
+    background-color: red;
+    color: yellow;
     transform: scale(1.1);
-    box-shadow: 0 0 20px #FFD700;
 }
 
-/* Event and Tournament Items */
-.event-item, .tournament-item, .forum-item, .shop-item {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #FFFF00;
-    text-align: center;
-    transition: transform 0.2s, box-shadow 0.3s;
-}
-
-.event-item:hover, .tournament-item:hover, .forum-item:hover, .shop-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #FFFF00;
-}
-
-/* Event and Tournament Grids */
+/* Events, Tournaments, Forums, and Shop Sections */
 .events-list, .tournament-list, .forum-list, .shop-grid {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 
-/* Section Visibility Animation */
-.content-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+.event-item, .tournament-item, .forum-item, .shop-item {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
 }
 
-.content-section.visible {
-    opacity: 1;
-    transform: translateY(0);
+.shop-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .streamer-grid, .events-list, .tournament-list, .forum-list, .shop-grid {
-        flex-direction: column;
-        align-items: center;
-    }
+/* General Button Styling */
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
