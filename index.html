@@ -8,19 +8,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero">
-        <nav>
-            <ul>
-                <li><a href="#" onclick="showSection('home')">Home</a></li>
-                <li><a href="#" onclick="showSection('events')">Events</a></li>
-                <li><a href="#" onclick="showSection('tournaments')">Tournaments</a></li>
-                <li><a href="#" onclick="showSection('streamers')">Streamers</a></li>
-                <li><a href="#" onclick="showSection('forums')">Forums</a></li>
-                <li><a href="#" onclick="showSection('shop')">Shop</a></li>
-            </ul>
-        </nav>
-        <h1>Arizona Fighting Game Hub</h1>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('events')">Events</a></li>
+            <li><a href="#" onclick="showSection('tournaments')">Tournaments</a></li>
+            <li><a href="#" onclick="showSection('streamers')">Streamers</a></li>
+            <li><a href="#" onclick="showSection('forums')">Forums</a></li>
+            <li><a href="#" onclick="showSection('shop')">Shop</a></li>
+        </ul>
+    </nav>
+
+    <h1>Arizona Fighting Game Hub</h1>
 
     <!-- Home Section -->
     <section id="home" class="content-section visible">
@@ -34,6 +33,31 @@
                 <button class="arcade-button" onclick="showSection('mortalKombat1')">Mortal Kombat 1</button>
                 <button class="arcade-button" onclick="showSection('guiltyGearStrive')">Guilty Gear Strive</button>
                 <button class="arcade-button" onclick="showSection('kingOfFighters')">King of Fighters XV</button>
+            </div>
+        </div>
+
+        <!-- Featured Streamers -->
+        <div class="content-container streamer-showcase">
+            <h2>Featured Streamers</h2>
+            <div class="streamer-grid">
+                <div class="streamer">
+                    <img src="streamer1-thumbnail.jpg" alt="Streamer 1 Thumbnail">
+                    <h3>Streamer 1</h3>
+                    <p>Tekken 8 Master</p>
+                    <button class="neon-button">Watch Now</button>
+                </div>
+                <div class="streamer">
+                    <img src="streamer2-thumbnail.jpg" alt="Streamer 2 Thumbnail">
+                    <h3>Streamer 2</h3>
+                    <p>Street Fighter 6 Pro</p>
+                    <button class="neon-button">Watch Now</button>
+                </div>
+                <div class="streamer">
+                    <img src="streamer3-thumbnail.jpg" alt="Streamer 3 Thumbnail">
+                    <h3>Streamer 3</h3>
+                    <p>Mortal Kombat 1 Legend</p>
+                    <button class="neon-button">Watch Now</button>
+                </div>
             </div>
         </div>
     </section>
@@ -176,28 +200,108 @@
 
     <!-- Game Sections -->
     <section id="tekken8" class="content-section" style="display: none;">
-        <h1>Tekken 8</h1>
-        <p>The latest in the Tekken series. Fight for glory!</p>
+        <div class="content-container">
+            <h1>Tekken 8</h1>
+            <p>The latest in the Tekken series. Fight for glory!</p>
+            <div class="tournament-list">
+                <div class="tournament-item">
+                    <h3>Weekly Tekken 8 Online</h3>
+                    <p>Platform: PS5</p>
+                    <p>Time: Every Friday at 7 PM</p>
+                    <button class="neon-button">Sign Up</button>
+                </div>
+                <div class="tournament-item">
+                    <h3>Tekken 8 Showdown</h3>
+                    <p>Location: Tucson Gaming Arena</p>
+                    <p>Date: March 15, 2024</p>
+                    <button class="neon-button">Register</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="streetfighter6" class="content-section" style="display: none;">
-        <h1>Street Fighter 6</h1>
-        <p>Show your skills in the newest Street Fighter installment.</p>
+        <div class="content-container">
+            <h1>Street Fighter 6</h1>
+            <p>Show your skills in the newest Street Fighter installment.</p>
+            <div class="tournament-list">
+                <div class="tournament-item">
+                    <h3>Regional SF6 Clash</h3>
+                    <p>Location: Phoenix Convention Center</p>
+                    <p>Date: April 10, 2024</p>
+                    <button class="neon-button">Join Now</button>
+                </div>
+                <div class="tournament-item">
+                    <h3>Online SF6 Weekly</h3>
+                    <p>Platform: PC</p>
+                    <p>Time: Every Saturday at 8 PM</p>
+                    <button class="neon-button">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="mortalKombat1" class="content-section" style="display: none;">
-        <h1>Mortal Kombat 1</h1>
-        <p>Finish them in Mortal Kombat 1. The classic returns.</p>
+        <div class="content-container">
+            <h1>Mortal Kombat 1</h1>
+            <p>Finish them in Mortal Kombat 1. The classic returns.</p>
+            <div class="tournament-list">
+                <div class="tournament-item">
+                    <h3>MK1 Fatal Clash</h3>
+                    <p>Location: Glendale Esports Arena</p>
+                    <p>Date: May 5, 2024</p>
+                    <button class="neon-button">Enter Tournament</button>
+                </div>
+                <div class="tournament-item">
+                    <h3>Weekly MK1 Online</h3>
+                    <p>Platform: Xbox Series X</p>
+                    <p>Time: Every Thursday at 6 PM</p>
+                    <button class="neon-button">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="guiltyGearStrive" class="content-section" style="display: none;">
-        <h1>Guilty Gear Strive</h1>
-        <p>Unleash your combos in Guilty Gear Strive.</p>
+        <div class="content-container">
+            <h1>Guilty Gear Strive</h1>
+            <p>Unleash your combos in Guilty Gear Strive.</p>
+            <div class="tournament-list">
+                <div class="tournament-item">
+                    <h3>Strive Monthly</h3>
+                    <p>Location: Mesa Gaming Center</p>
+                    <p>Date: March 22, 2024</p>
+                    <button class="neon-button">Sign Up</button>
+                </div>
+                <div class="tournament-item">
+                    <h3>Strive Online Weekly</h3>
+                    <p>Platform: PS5</p>
+                    <p>Time: Every Sunday at 5 PM</p>
+                    <button class="neon-button">Join Now</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="kingOfFighters" class="content-section" style="display: none;">
-        <h1>King of Fighters XV</h1>
-        <p>Team up and dominate in King of Fighters XV.</p>
+        <div class="content-container">
+            <h1>King of Fighters XV</h1>
+            <p>Team up and dominate in King of Fighters XV.</p>
+            <div class="tournament-list">
+                <div class="tournament-item">
+                    <h3>KoF XV Championship</h3>
+                    <p>Location: Scottsdale Arcade</p>
+                    <p>Date: April 25, 2024</p>
+                    <button class="neon-button">Register Now</button>
+                </div>
+                <div class="tournament-item">
+                    <h3>KoF XV Online Weekly</h3>
+                    <p>Platform: PC</p>
+                    <p>Time: Every Wednesday at 7 PM</p>
+                    <button class="neon-button">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script>
