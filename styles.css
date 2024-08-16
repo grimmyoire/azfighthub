@@ -41,3 +41,15 @@
     </script>
 </body>
 </html>
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    background-image: url('pixelartbackkground.webp'); /* Ensure the filename matches */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: crt-flicker 2s infinite;
+}
