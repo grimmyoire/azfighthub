@@ -5,7 +5,7 @@ body {
     color: #FFFFFF;
     margin: 0;
     padding: 0;
-    background-image: url('pixel-stars-background.png'); /* Replace with your pixelated stars image */
+    background-image: url('pixelthing.webp'); /* Ensure this matches the exact file name */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
