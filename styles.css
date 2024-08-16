@@ -52,39 +52,74 @@ h1 {
     margin-bottom: 20px;
 }
 
-.content-section {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.85);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-    border: 3px solid #ff00e1;
-    border-radius: 10px;
-    margin: 20px;
+/* Arcade Buttons */
+.game-menu {
+    margin-top: 30px;
 }
 
-.neon-button {
+.arcade-button {
     background-color: #00d4ff;
     color: #000000;
+    font-family: 'Press Start 2P', sans-serif;
+    padding: 15px 30px;
+    margin: 10px;
     border: none;
-    padding: 10px 20px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    box-shadow: 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 60px #00d4ff;
+    box-shadow: 0 0 15px #00d4ff, 0 0 30px #00d4ff, 0 0 45px #00d4ff;
+    transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
 }
 
-.neon-button:hover {
+.arcade-button:hover {
     background-color: #ff00e1;
+    color: #FFFFFF;
     transform: scale(1.1);
     box-shadow: 0 0 20px #ff00e1, 0 0 40px #ff00e1, 0 0 60px #ff00e1;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .streamer-grid {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Streamer Showcase */
+.streamer-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
+
+.streamer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00d4ff;
+    width: 250px;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.streamer img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.streamer h3 {
+    color: #ff00e1;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #ff00e1;
+}
+
+.streamer p {
+    color: #00ffcc;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.streamer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #00d4ff;
+}
+
+.neon-button {
+    background-color: #00d4ff;
+    color
