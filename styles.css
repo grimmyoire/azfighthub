@@ -5,17 +5,17 @@ body {
     color: #FFFFFF;
     margin: 0;
     padding: 0;
-    background-image: url('pixelthing.webp'); /* Ensure this matches the exact file name */
+    background-image: url('pixelart.png'); /* New background image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 header {
-    background: linear-gradient(90deg, #ff00e1, #00d4ff);
+    background: linear-gradient(90deg, #ffcc00, #ff8800); /* Arcade yellow and orange gradient */
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #00ff66;
+    border-bottom: 3px solid #ffcc00; /* Darker yellow for contrast */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -32,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFFFFF;
+    color: #ffcc00; /* Arcade yellow for text */
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
@@ -41,14 +41,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #ff00e1;
+    background-color: #ffcc00;
     color: #000000;
 }
 
 h1 {
     font-size: 2.5em;
-    color: #00ffcc;
-    text-shadow: 3px 3px #ff006e, 0 0 10px #ff00e1, 0 0 20px #ff00e1;
+    color: #ffcc00; /* Arcade yellow for main headers */
+    text-shadow: 3px 3px #ff8800, 0 0 10px #ff8800, 0 0 20px #ff8800; /* Orange shadow for arcade effect */
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -75,7 +75,7 @@ h1 {
 }
 
 .arcade-button {
-    background-color: #00d4ff;
+    background-color: #ffcc00; /* Arcade yellow */
     color: #000000;
     font-family: 'Press Start 2P', sans-serif;
     padding: 15px 30px;
@@ -83,22 +83,22 @@ h1 {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 0 0 15px #00d4ff, 0 0 30px #00d4ff, 0 0 45px #00d4ff;
+    box-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc00, 0 0 45px #ffcc00;
     transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
     animation: pulse 2s infinite;
 }
 
 .arcade-button:hover {
-    background-color: #ff00e1;
+    background-color: #ff8800; /* Bright orange on hover */
     color: #FFFFFF;
     transform: scale(1.1);
-    box-shadow: 0 0 20px #ff00e1, 0 0 40px #ff00e1, 0 0 60px #ff00e1;
+    box-shadow: 0 0 20px #ff8800, 0 0 40px #ff8800, 0 0 60px #ff8800;
 }
 
 @keyframes pulse {
-    0% { box-shadow: 0 0 15px #00d4ff; }
-    50% { box-shadow: 0 0 30px #00d4ff; }
-    100% { box-shadow: 0 0 15px #00d4ff; }
+    0% { box-shadow: 0 0 15px #ffcc00; }
+    50% { box-shadow: 0 0 30px #ffcc00; }
+    100% { box-shadow: 0 0 15px #ffcc00; }
 }
 
 /* Streamer Showcase */
@@ -116,7 +116,7 @@ h1 {
     padding: 20px;
     margin: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 15px #00d4ff;
+    box-shadow: 0 0 15px #ffcc00; /* Yellow glow */
     width: 250px;
     transition: transform 0.2s, box-shadow 0.3s;
 }
@@ -128,24 +128,24 @@ h1 {
 }
 
 .streamer h3 {
-    color: #ff00e1;
+    color: #ffcc00;
     margin-bottom: 10px;
-    text-shadow: 0 0 5px #ff00e1;
+    text-shadow: 0 0 5px #ffcc00;
 }
 
 .streamer p {
-    color: #00ffcc;
+    color: #ffcc00;
     font-size: 1.1em;
     margin-bottom: 15px;
 }
 
 .streamer:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 30px #00d4ff;
+    box-shadow: 0 0 30px #ffcc00;
 }
 
 .neon-button {
-    background-color: #00d4ff;
+    background-color: #ffcc00;
     color: #000000;
     border: none;
     padding: 10px 20px;
@@ -154,13 +154,36 @@ h1 {
     margin-top: 10px;
     border-radius: 5px;
     font-weight: bold;
-    box-shadow: 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 60px #00d4ff;
+    box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00, 0 0 60px #ffcc00;
 }
 
 .neon-button:hover {
-    background-color: #ff00e1;
+    background-color: #ff8800;
     transform: scale(1.1);
-    box-shadow: 0 0 20px #ff00e1, 0 0 40px #ff00e1, 0 0 60px #ff00e1;
+    box-shadow: 0 0 20px #ff8800, 0 0 40px #ff8800, 0 0 60px #ff8800;
+}
+
+/* Event and Tournament Items */
+.event-item, .tournament-item, .forum-item, .shop-item {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ffcc00;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.event-item:hover, .tournament-item:hover, .forum-item:hover, .shop-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #ffcc00;
+}
+
+/* Event and Tournament Grids */
+.events-list, .tournament-list, .forum-list, .shop-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Section Visibility Animation */
@@ -177,7 +200,7 @@ h1 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .streamer-grid {
+    .streamer-grid, .events-list, .tournament-list, .forum-list, .shop-grid {
         flex-direction: column;
         align-items: center;
     }
