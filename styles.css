@@ -63,6 +63,7 @@ h1 {
     text-align: center;
     min-height: 100vh;
     padding: 20px;
+    margin-top: -20px; /* Adjust this value to move it up */
 }
 
 /* Arcade Buttons */
@@ -84,6 +85,7 @@ h1 {
     cursor: pointer;
     box-shadow: 0 0 15px #00d4ff, 0 0 30px #00d4ff, 0 0 45px #00d4ff;
     transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+    animation: pulse 2s infinite;
 }
 
 .arcade-button:hover {
@@ -91,6 +93,12 @@ h1 {
     color: #FFFFFF;
     transform: scale(1.1);
     box-shadow: 0 0 20px #ff00e1, 0 0 40px #ff00e1, 0 0 60px #ff00e1;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 15px #00d4ff; }
+    50% { box-shadow: 0 0 30px #00d4ff; }
+    100% { box-shadow: 0 0 15px #00d4ff; }
 }
 
 /* Streamer Showcase */
@@ -153,6 +161,18 @@ h1 {
     background-color: #ff00e1;
     transform: scale(1.1);
     box-shadow: 0 0 20px #ff00e1, 0 0 40px #ff00e1, 0 0 60px #ff00e1;
+}
+
+/* Section Visibility Animation */
+.content-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.content-section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Responsive Design */
