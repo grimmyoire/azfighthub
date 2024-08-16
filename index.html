@@ -18,41 +18,42 @@
                 <li><a href="#" onclick="showSection('shop')">Shop</a></li>
             </ul>
         </nav>
+        <h1>Arizona Fighting Game Hub</h1>
     </header>
 
     <!-- Home Section -->
     <section id="home" class="content-section">
-        <h1>Welcome to Arizona Fighting Game Hub</h1>
-        <p>Your go-to platform for all things fighting games in Arizona.</p>
+        <h1>Welcome Fighters!</h1>
+        <p>Step into the arena and join the action.</p>
     </section>
 
     <!-- Events Section -->
     <section id="events" class="content-section" style="display: none;">
         <h1>Upcoming Events</h1>
-        <p>Stay tuned for exciting events happening in the community!</p>
+        <p>Stay tuned for upcoming battles and community meetups.</p>
     </section>
 
     <!-- Tournaments Section -->
     <section id="tournaments" class="content-section" style="display: none;">
         <h1>Tournaments</h1>
-        <p>Compete with the best. Check out our latest tournaments.</p>
+        <p>Prove your worth in the upcoming tournaments.</p>
     </section>
 
     <!-- Streamers Section -->
     <section id="streamers" class="content-section" style="display: none;">
-        <h1>Streamers</h1>
+        <h1>Featured Streamers</h1>
         <div class="streamer-grid">
             <div class="streamer">
                 <img src="streamer1-thumbnail.jpg" alt="Streamer 1 Thumbnail">
                 <h3>Streamer 1</h3>
-                <p>Currently Playing: Tekken 8</p>
-                <button>Watch Now</button>
+                <p>Tekken 8 Master</p>
+                <button class="neon-button">Watch Now</button>
             </div>
             <div class="streamer">
                 <img src="streamer2-thumbnail.jpg" alt="Streamer 2 Thumbnail">
                 <h3>Streamer 2</h3>
-                <p>Currently Playing: Street Fighter</p>
-                <button>Watch Now</button>
+                <p>Street Fighter Champ</p>
+                <button class="neon-button">Watch Now</button>
             </div>
         </div>
     </section>
@@ -60,26 +61,23 @@
     <!-- Forums Section -->
     <section id="forums" class="content-section" style="display: none;">
         <h1>Community Forums</h1>
-        <p>Join the discussion. Share your thoughts, strategies, and more!</p>
+        <p>Discuss strategies, share victories, and connect with other fighters.</p>
     </section>
 
     <!-- Shop Section -->
     <section id="shop" class="content-section" style="display: none;">
-        <h1>Shop</h1>
-        <p>Check out the latest merchandise and support the community.</p>
+        <h1>Fighter's Shop</h1>
+        <p>Gear up with exclusive merch and support the community.</p>
     </section>
 
     <script>
         function showSection(sectionId) {
-            // Hide all sections
             var sections = document.querySelectorAll('.content-section');
             sections.forEach(function(section) {
                 section.style.display = 'none';
             });
-            // Show the selected section
             document.getElementById(sectionId).style.display = 'block';
         }
     </script>
 </body>
 </html>
-
