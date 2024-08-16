@@ -26,22 +26,18 @@
     <section id="home" class="content-section">
         <h1>Player Select</h1>
         <p>Choose your fighter and enter the arena!</p>
+        <!-- Arcade Menu Buttons -->
+        <div class="game-menu">
+            <button class="arcade-button" onclick="showSection('tekken8')">Tekken 8</button>
+            <button class="arcade-button" onclick="showSection('streetfighter6')">Street Fighter 6</button>
+            <button class="arcade-button" onclick="showSection('mortalKombat1')">Mortal Kombat 1</button>
+            <button class="arcade-button" onclick="showSection('guiltyGearStrive')">Guilty Gear Strive</button>
+            <button class="arcade-button" onclick="showSection('kingOfFighters')">King of Fighters XV</button>
+        </div>
     </section>
 
-    <!-- Events Section -->
-    <section id="events" class="content-section" style="display: none;">
-        <h1>Upcoming Events</h1>
-        <p>Don’t miss the next big battle.</p>
-    </section>
-
-    <!-- Tournaments Section -->
-    <section id="tournaments" class="content-section" style="display: none;">
-        <h1>Tournaments</h1>
-        <p>Prove you're the best. Join the fight.</p>
-    </section>
-
-    <!-- Streamers Section -->
-    <section id="streamers" class="content-section" style="display: none;">
+    <!-- Streamer Showcasing Section -->
+    <section id="streamer-showcase" class="content-section">
         <h1>Top Streamers</h1>
         <div class="streamer-grid">
             <div class="streamer">
@@ -53,22 +49,42 @@
             <div class="streamer">
                 <img src="streamer2-thumbnail.jpg" alt="Streamer 2 Thumbnail">
                 <h3>Streamer 2</h3>
-                <p>Street Fighter Champ</p>
+                <p>Street Fighter 6 Pro</p>
+                <button class="neon-button">Watch Now</button>
+            </div>
+            <div class="streamer">
+                <img src="streamer3-thumbnail.jpg" alt="Streamer 3 Thumbnail">
+                <h3>Streamer 3</h3>
+                <p>Mortal Kombat 1 Legend</p>
                 <button class="neon-button">Watch Now</button>
             </div>
         </div>
     </section>
 
-    <!-- Forums Section -->
-    <section id="forums" class="content-section" style="display: none;">
-        <h1>Community Forums</h1>
-        <p>Join the discussion and share your strategies.</p>
+    <!-- Game Sections -->
+    <section id="tekken8" class="content-section" style="display: none;">
+        <h1>Tekken 8</h1>
+        <p>The latest in the Tekken series. Fight for glory!</p>
     </section>
 
-    <!-- Shop Section -->
-    <section id="shop" class="content-section" style="display: none;">
-        <h1>Shop</h1>
-        <p>Get exclusive merch and support the community.</p>
+    <section id="streetfighter6" class="content-section" style="display: none;">
+        <h1>Street Fighter 6</h1>
+        <p>Show your skills in the newest Street Fighter installment.</p>
+    </section>
+
+    <section id="mortalKombat1" class="content-section" style="display: none;">
+        <h1>Mortal Kombat 1</h1>
+        <p>Finish them in Mortal Kombat 1. The classic returns.</p>
+    </section>
+
+    <section id="guiltyGearStrive" class="content-section" style="display: none;">
+        <h1>Guilty Gear Strive</h1>
+        <p>Unleash your combos in Guilty Gear Strive.</p>
+    </section>
+
+    <section id="kingOfFighters" class="content-section" style="display: none;">
+        <h1>King of Fighters XV</h1>
+        <p>Team up and dominate in King of Fighters XV.</p>
     </section>
 
     <script>
