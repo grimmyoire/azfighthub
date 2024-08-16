@@ -1,12 +1,43 @@
-body {
-    font-family: 'Press Start 2P', sans-serif;
-    background-color: #000000;
-    color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-    background-image: url('your-image-name.png'); /* Replace with the correct file name */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    animation: crt-flicker 2s infinite;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arizona Fighting Game Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('events')">Events</a></li>
+                <li><a href="#" onclick="showSection('tournaments')">Tournaments</a></li>
+                <li><a href="#" onclick="showSection('streamers')">Streamers</a></li>
+                <li><a href="#" onclick="showSection('forums')">Forums</a></li>
+                <li><a href="#" onclick="showSection('shop')">Shop</a></li>
+            </ul>
+        </nav>
+        <h1>Arizona Fighting Game Hub</h1>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="content-section">
+        <h1>Welcome Fighters!</h1>
+        <p>Step into the arena and join the action.</p>
+    </section>
+
+    <!-- Other Sections... -->
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
